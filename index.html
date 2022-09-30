@@ -11,39 +11,47 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css"
     />
     <script src="dist/js/simple-context-menu.min.js"></script>
-    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/style.css" />
   </head>
   <body>
-    
     <h1>Context Menu</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus corporis omnis optio architecto sunt similique, molestiae dolorem totam, quae, explicabo repudiandae rerum velit ratione accusantium vero debitis qui eaque ipsa dicta magnam laudantium! Minima quis, rerum magni velit quos sunt consequatur soluta laudantium? Nemo eius, architecto enim ipsum laudantium et odit officia ratione est amet deleniti ex dolorem, ipsam culpa officiis nam nulla cupiditate maxime praesentium impedit eveniet quod. Iure minus saepe ratione repellendus animi fugiat dolorem molestiae asperiores alias laboriosam, dignissimos fugit ducimus, ipsa quod! Autem suscipit laudantium possimus iste sequi porro itaque, nam molestiae soluta nesciunt non earum!</p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+      corporis omnis optio architecto sunt similique, molestiae dolorem totam,
+      quae, explicabo repudiandae rerum velit ratione accusantium vero debitis
+      qui eaque ipsa dicta magnam laudantium! Minima quis, rerum magni velit
+      quos sunt consequatur soluta laudantium? Nemo eius, architecto enim ipsum
+      laudantium et odit officia ratione est amet deleniti ex dolorem, ipsam
+      culpa officiis nam nulla cupiditate maxime praesentium impedit eveniet
+      quod. Iure minus saepe ratione repellendus animi fugiat dolorem molestiae
+      asperiores alias laboriosam, dignissimos fugit ducimus, ipsa quod! Autem
+      suscipit laudantium possimus iste sequi porro itaque, nam molestiae soluta
+      nesciunt non earum!
+    </p>
 
     <div>
-        <p>Right click on options</p>
-        <button class="btn-context">...</button>
+      <p>Right click on options</p>
+      <button class="btn-context">...</button>
     </div>
-    
 
-    <div class="context-area">
-        Right Click Here
-    </div>
+    <div class="context-area">Right Click Here</div>
 
     <style>
-        .context-menu-style{
-            background:#373B4F;
-        }
-        .context-menu-style .scm-item:hover{
-            background: #24283C;
-        }
+      .context-menu-style {
+        background: #373b4f;
+      }
+      .context-menu-style .scm-item:hover {
+        background: #24283c;
+      }
     </style>
     <script>
       $(".context-area,.btn-context").simpleContextMenu({
         class: null,
         onShow: function () {
-            console.log('context menu shown')
+          console.log("context menu shown");
         },
         onHide: function () {
-            console.log('context menu hide')
+          console.log("context menu hide");
         },
         options: [
           {
