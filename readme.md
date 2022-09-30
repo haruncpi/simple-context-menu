@@ -18,22 +18,37 @@ A simple and customizable context menu plugin for jQuery.
 ```js
 let options = [
   {
-    label: "Option A",
+    label: 'Copy',
     action: function () {
-      console.log("Option A selected");
+      console.log('Option copy selected');
     }
   },
   {
-    label: "Option B",
+    label: 'Reset',
     action: function () {
-      console.log("Option B selected");
+      console.log('Option reset selected');
     }
-  },
+  }
 ];
 
 $(selector).simpleContextMenu({
   options: options
 });
 ```
+
+# Options
+
+| option      | default | description|
+| ----------- | ----------- | ------ |
+| class      | null       | You can set custom css class to context menu container|
+|onShow|null| set an `callback` function, which will trigger after context menu shown
+|onHide|null| set an `callback` function, which will trigger after context menu hide
+|options|[]| set an `array` of object. Each object possible option `label` ( string ), `action` ( function ) and `icon` ( string )
+
+For icon you can set font awesome or anything
+
+`icon: '<i class="fa fa-copy"></i>'` or 
+
+`icon: '<img src="images/copy-icon.png">'`
 
 ### [See Demo](https://haruncpi.github.io/simple-context-menu/)
