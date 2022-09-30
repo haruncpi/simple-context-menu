@@ -1,4 +1,4 @@
-# jQUery Simple Context Menu
+# jQuery Simple Context Menu
 A simple and customizable context menu plugin for jQuery.
 
 ### Add jQuery First
@@ -21,17 +21,19 @@ let options = [
     label: "Option A",
     action: function () {
       console.log("Option A selected");
-    },
+    }
   },
   {
     label: "Option B",
     action: function () {
       console.log("Option B selected");
-    },
+    }
   },
 ];
 
 $(selector).simpleContextMenu({
-  options: options,
+  options: options
 });
 ```
+
+### [See Demo](https://haruncpi.github.io/simple-context-menu/)
