@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Context Menu</title>
+    <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css"
+    />
+    <script src="dist/js/context-menu.min.js"></script>
+    <link rel="stylesheet" href="src/css/style.css">
+  </head>
+  <body>
+    
+    <h1>Context Menu</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus corporis omnis optio architecto sunt similique, molestiae dolorem totam, quae, explicabo repudiandae rerum velit ratione accusantium vero debitis qui eaque ipsa dicta magnam laudantium! Minima quis, rerum magni velit quos sunt consequatur soluta laudantium? Nemo eius, architecto enim ipsum laudantium et odit officia ratione est amet deleniti ex dolorem, ipsam culpa officiis nam nulla cupiditate maxime praesentium impedit eveniet quod. Iure minus saepe ratione repellendus animi fugiat dolorem molestiae asperiores alias laboriosam, dignissimos fugit ducimus, ipsa quod! Autem suscipit laudantium possimus iste sequi porro itaque, nam molestiae soluta nesciunt non earum!</p>
+
+    <div>
+        <p>Right click on options</p>
+        <button class="btn-context">...</button>
+    </div>
+    
+
+    <div class="context-area">
+        Right Click Here
+    </div>
+
+    <style>
+        .context-menu-style{
+            background:#373B4F;
+        }
+        .context-menu-style .scm-item:hover{
+            background: #24283C;
+        }
+    </style>
+    <script>
+      $(".context-area,.btn-context").simpleContextMenu({
+        class: null,
+        onShow: function () {
+            console.log('context menu shown')
+        },
+        onHide: function () {
+            console.log('context menu hide')
+        },
+        options: [
+          {
+            label: "Copy",
+            icon: '<i class="fa fa-copy"></i>',
+            action: function () {
+              console.log("copy selected");
+            },
+          },
+          {
+            label: "Format Code",
+            icon: '<i class="fa fa-code"></i>',
+            action: function () {
+              console.log("format selected");
+            },
+          },
+        ],
+      });
+    </script>
+  </body>
+</html>
