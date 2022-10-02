@@ -1,5 +1,8 @@
 # jQuery Simple Context Menu
 A simple and customizable context menu plugin for jQuery.
+### [See Demo](https://haruncpi.github.io/simple-context-menu/)
+
+<br>
 
 ### Add jQuery First
 
@@ -46,5 +49,3 @@ For icon you can set font awesome or anything
 `icon: '<i class="fa fa-copy"></i>'` or 
 
 `icon: '<img src="images/copy-icon.png">'`
-
-### [See Demo](https://haruncpi.github.io/simple-context-menu/)
