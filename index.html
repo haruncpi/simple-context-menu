@@ -26,7 +26,7 @@
       quod. Iure minus saepe ratione repellendus animi fugiat dolorem molestiae
       asperiores alias laboriosam, dignissimos fugit ducimus, ipsa quod! Autem
       suscipit laudantium possimus iste sequi porro itaque, nam molestiae soluta
-      nesciunt non earum!
+      nesciunt non earum! <a class="context-link" href="#">Context Menu</a>
     </p>
 
     <div>
@@ -35,6 +35,12 @@
     </div>
 
     <div class="context-area">Right Click Here</div>
+
+    <div>
+      <br>
+      <br>
+      <a href="https://github.com/haruncpi/simple-context-menu" target="_blank">Plugin Documentation</a>
+    </div>
 
     <style>
       .context-menu-style {
@@ -45,7 +51,7 @@
       }
     </style>
     <script>
-      $(".context-area,.btn-context").simpleContextMenu({
+      $(".context-area,.btn-context,.context-link").simpleContextMenu({
         class: null,
         onShow: function () {
           console.log("context menu shown");
@@ -57,16 +63,22 @@
           {
             label: "Copy",
             icon: '<i class="fa fa-copy"></i>',
-            action: function () {
-              console.log("copy selected");
-            },
+            action: () => console.log("copy selected"),
           },
           {
             label: "Format Code",
             icon: '<i class="fa fa-code"></i>',
-            action: function () {
-              console.log("format selected");
-            },
+            action: () => console.log("format selected"),
+          },
+          {
+            label: "Undo",
+            icon: '<i class="fa fa-undo"></i>',
+            action: () => console.log("Undo selected"),
+          },
+          {
+            label: "Refresh",
+            icon: '<i class="fa fa-refresh"></i>',
+            action: () => console.log("refresh selected"),
           },
         ],
       });

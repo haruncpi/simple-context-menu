@@ -39,8 +39,6 @@
         el.contextmenu(function (e) {
             e.preventDefault()
 
-            console.log(e)
-
             let container = $('div.scm-container');
 
             let html = ''

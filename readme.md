@@ -19,16 +19,12 @@ A simple and customizable context menu plugin for jQuery.
 let options = [
   {
     label: 'Copy',
-    action: function () {
-      console.log('Option copy selected');
-    }
+    icon: '<i class="fa fa-copy"></i>',
+    action: () => console.log('Copy selected')
   },
-  {
-    label: 'Reset',
-    action: function () {
-      console.log('Option reset selected');
-    }
-  }
+  ...,
+  ...,
+  ...
 ];
 
 $(selector).simpleContextMenu({
